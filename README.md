@@ -1,6 +1,6 @@
 # inject_cert.py
 
-<img width="1115" height="624" alt="image" src="https://github.com/user-attachments/assets/420dbba5-db0f-4722-9415-6eecd25b2da6" />
+<img width="816" height="287" alt="image" src="https://github.com/user-attachments/assets/22fad30d-6495-4e71-a9d9-cca50e41b24e" />
 
 
 Injects a CA certificate into the **system** trust store of a rooted Android 14
