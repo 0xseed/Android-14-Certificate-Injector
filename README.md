@@ -1,4 +1,4 @@
-# Android 14 Certificate Injector (Python)
+# inject_cert.py
 
 Injects a CA certificate into the **system** trust store of a rooted Android 14
 device over ADB, so that apps which only trust system CAs (the default since
@@ -58,6 +58,12 @@ python inject_cert.py <cert.pem>
 # Target a specific device when multiple are connected
 python inject_cert.py <cert.pem> -s <serial>
 ```
+
+Accepts `.pem`, `.crt`, and `.0` (Android hash-named) certificate files —
+the extension doesn't matter to the script, since `openssl x509 -inform PEM`
+is run against the file's contents regardless of name. Any of these work as
+long as the certificate itself is PEM-encoded (the standard format for all
+three).
 
 The script will:
 1. Compute the Android-style hash filename for your cert (`<hash>.0`).
