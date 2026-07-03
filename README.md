@@ -1,5 +1,8 @@
 # inject_cert.py
 
+<img width="1115" height="624" alt="image" src="https://github.com/user-attachments/assets/420dbba5-db0f-4722-9415-6eecd25b2da6" />
+
+
 Injects a CA certificate into the **system** trust store of a rooted Android 14
 device over ADB, so that apps which only trust system CAs (the default since
 Android 7 / API 24) will also trust the injected certificate.
