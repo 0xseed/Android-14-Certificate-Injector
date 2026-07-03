@@ -1,4 +1,4 @@
-# inject_cert.py
+# Android 14 Certificate Injector (Python)
 
 Injects a CA certificate into the **system** trust store of a rooted Android 14
 device over ADB, so that apps which only trust system CAs (the default since
